@@ -84,11 +84,12 @@ def fill_pdf_form(pdf_file, data_dict, output_pdf):
 
 if __name__ == "__main__":
     # Example usage
-    excel_file = "test.xlsx"
-    pdf_file = "Example Fillable PDF.pdf"
+    excel_file = input("Enter the path to the excel file: ")
+    pdf_file = input("Enter the path to the pdf file: ")
     data = excel_to_dict(excel_file)
     print(data)
 
     fill_pdf_form(pdf_file, data[0], "filled_form.pdf")
 
     
+
